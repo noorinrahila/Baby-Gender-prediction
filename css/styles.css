@@ -1,0 +1,209 @@
+
+
+ .menu a{
+  text-decoration: none;
+  color:rgb(240, 233, 240);
+  background-color:indigo;
+  padding: 6px;
+  border-radius: 20px;
+  
+}
+
+body{
+  background-image: url('../images/hd.jpg');
+
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.6;
+
+
+}
+
+
+/* Responsive
+------------------------------------*/
+@media screen and (min-width:750px){
+  .base h4{
+      font-size: 26px;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: normal;
+    margin-top: 0px;
+   
+    font-size: 34px;
+      color: navy;
+  }
+  .box {
+  width: 800px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #f5f2f0;
+  border: none;
+  border-radius: 25px;
+  text-align: center;
+}
+h2{
+  color: white;
+
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+/**************
+ Input Fields labels
+***************/
+label{
+  color: #383533;
+  font-size: 30px;
+}
+/**************
+ Input Fields
+***************/
+#date{
+  border: 2px solid #0097e6;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 45px;
+  width: 200px;
+  outline: none;
+  color: #121111;
+  border-radius: 25px;
+  text-align: center;
+  transition: 250ms width ease, 250ms border-color ease;
+font-family: "Times New Roman", Times, serif;
+font-weight: bolder;
+
+  font-size: 16px;
+}
+#month,#dob,#year{
+  border: 2px solid #0097e6;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 45px;
+  width: 35px;
+  outline: none;
+  color: #121111;
+  border-radius: 25px;
+  text-align: center;
+  transition: 250ms width ease, 250ms border-color ease;
+font-family: "Times New Roman", Times, serif;
+font-weight: bolder;
+
+  font-size: 16px;
+}
+.title{
+font-size: 20px;
+text-align: left;
+font-family: sans-serif;
+font-weight: normal;
+line-height: 0.5;
+letter-spacing: 0.5px;
+word-spacing: 2.7px;
+color: #1073d0;
+}
+.block{
+width: 135px;
+padding: 5px 20px;
+
+margin-left: 20px;
+display: inline-block;
+
+}
+/**************
+   On Hover
+***************/
+#date:hover{
+  width: 210px;
+}
+#year:hover ,#month:hover,#dob:hover{
+  width: 40px;
+}
+/**************
+   On Focus
+***************/
+#date:focus{
+  width: 230px;
+  border-color: #6fb98f;
+}
+#year:focus,#month:focus,#dob:focus{
+  width: 50px;
+  border-color: #6fb98f;
+}
+
+/**************
+option and select buttom
+***************/
+
+option{
+  background-color:#e8eded;
+text-align:left;
+
+}
+
+
+/**************
+ Submit Button
+***************/
+#btn{
+  border: 2px solid #2ecc71;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 40px;
+  outline: none;
+  color: #2a470e;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 200;
+  transition: 250ms background ease;
+  -webkit-transition: 250ms background ease;
+  -moz-transition: 250ms background ease;
+  -o-transition: 250ms background ease;
+}
+/**************
+   On Hover
+***************/
+#btn:hover{
+  background: #2ecc71;
+}
+
+}
+ /**************
+  Images 
+***************/
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ /**************
+   Nav bar
+***************/
+.menu a{
+  text-decoration: none;
+  color:rgb(240, 233, 240);
+  background-color:indigo;
+  padding: 6px;
+  border-radius: 20px;
+  
+}
+/**************
+  Footer
+***************/
+
+.footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: red;
+ color: white;
+ text-align: center;
+}
