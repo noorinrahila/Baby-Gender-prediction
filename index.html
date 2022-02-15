@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     
     <script src = "demo.js" defer></script>
+
   </head>
   <body >
     <main>
@@ -16,24 +17,22 @@
           </nav>
        
 <form class="box" action="?"  id="myForm" method="get">
+  <ul class="errorMessages"></ul>
     <div class="base">
         <div class="enter">
         <h4>Baby Gender prediction</h4>
     </div>
 <label for="date">Enter Your Date-of-Birth</label>
- <input placeholder="Type Date" type="date" onfocus="(this.type = 'date')"  id="date">
+ <input placeholder="mm/dd/yyyy" type="date" onfocus="(this.type = 'date')"  id="date" min ="1953-01-01" max="2003-01-01" required >
  <label for="date">Enter Your First month of pregnancy </label><br>
- <div class="block">
-    <p class="title">Date</p>
-    <input type="text" name="dob" id="dob" placeholder="dd" required="required" minlength="1" maxlength="2" />
-</div>
+
 <div class="block">
     <p class="title">Month</p>
-  <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2" />
+  <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2"  required />
 </div>
 <div class="block">
     <p class="title">Year</p>
-  <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4" />
+  <input type="text" name="year" id="year" placeholder="yyyy"  minlength="4" maxlength="4"  required />
 </div>
 </div>
   <input type="submit" id="btn" value="Submit" >
@@ -54,6 +53,6 @@
        This application will predict the gender between age 18 to 45.<br>
     This prediction work's on historical data of Tamil calendar</p>
       </div>
-   
+        
   </body>
 </html>

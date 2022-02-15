@@ -1,4 +1,6 @@
 "use strict"
+
+
 function ageCalculator() {
     var userinput = document.getElementById("date").value;
     var dob = new Date(userinput);
@@ -17,25 +19,22 @@ function ageCalculator() {
     var ageB= Math.abs(year - 1970);
  
    
-    var d1 = document.getElementById('dob').value;
+   
   var m1 = document.getElementById('month').value;
   var y1 = document.getElementById('year').value;
 
   var date = new Date();
-  var d2 = date.getDate();
+ 
   var m2 = 1 + date.getMonth();
   var y2 = date.getFullYear();
   var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-  if(d1 > d2){
-  	d2 = d2 + month[m2 - 1];
-  	m2 = m2 - 1;
-  }
+
   if(m1 > m2){
   	m2 = m2 + 12;
   	y2 = y2 - 1;
   }
-  var d = d2 - d1;
+ 
   var m = m2 - m1;
   var y = y2 - y1;
 
@@ -89,68 +88,77 @@ console.log(gender.month);
       
     
         i = a-18;
-    
-        let result = 0;
+        let result;
+        console.log(a);
+        console.log(b);
+
+        if(b == 1)
+    {
+        result = jan[i];
+
+    } 
+    else if (b == 2)
+    {
+        result = feb[i];
+    }
+    else if (b== 3)
+    {
+        result = mar[i];
+    }
+    else if (b == 4)
+    {
+        result = apr[i];
+    }
+    else if (b == 5)
+    {
+        result = may[i];
+    }
+    else if (b == 6)
+    {
+        result = jun[i];
+    }
+    else if (b == 7)
+    {
+        result = jul[i];
+    }
+    else if (b == 8)
+    {
+        result = aug[i];
+    }
+    else if (b == 9)
+    {
+        result = sep[i];
+    }
+    else if (b == 10)
+    {
+        result = oct[i];
+    }
+    else if (b == 11)
+    {
+        result = nov[i];
+    }
+    else if (b == 12)
+    {
+        result = dec[i];
+    }
      
-        switch(b){
-            case 1:
-                result =jan[i];
-                break;
-
-                case 2:
-                    result =feb[i];
-                    break;
-
-                    case 3:
-                        result =mar[i];
-                        break;
-
-                        case 4:
-                            result =apr[i];
-                            break;
-
-                            case 5:
-                                result =may[i];
-                                break;
-
-                                case 6:
-                                    result =jun[i];
-                                    break;
-
-                                    case 7:
-                                        result =jul[i];
-                                        break;
-
-                                        case 8:
-                                            result =aug[i];
-                                            break;
-
-                                            case 9:
-                                                result =sep[i];
-                                                break;
-
-                                                case 10:
-                                                    result =oct[i];
-                                                    break;
-
-                                                    case 11:
-                                                        result =nov[i];
-                                                        break;
-
-                                                        case 12:
-                                                            result =dec[i];
-                                                            break;
-        }
+       
         if(result == 0)
         { const myElement = document.getElementById("myForm");
         myElement.style.display ="none";
         document.body.style.background ="#fa98d3 url('../images/babygirl.gif') no-repeat center 120px";
          }
-      else
+      else if(result == 1)
   {
     const myElement1 = document.getElementById("myForm");
     myElement1.style.display="none";
     document.body.style.background ="#b4e9f0 url('../images/baby_boy1.gif') no-repeat center 120px"  ;
+
+  }
+  else{
+    const myElement1 = document.getElementById("myForm");
+    myElement1.style.display="none";
+    document.body.style.background ="#d9dbde url('../images/wrong.gif') no-repeat center 120px"  ;
 
   }
         
